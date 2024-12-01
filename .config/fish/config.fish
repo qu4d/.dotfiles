@@ -18,6 +18,8 @@ fzf_configure_bindings --directory=\cF --processes=\cP --git_log= --git_status=
 
 
 ### aliases ###
+# nvim
+alias n='nvim'
 
 # brew
 alias brewery='brew update && brew upgrade && brew autoremove && brew cleanup && brew doctor'
