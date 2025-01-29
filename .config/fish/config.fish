@@ -31,3 +31,6 @@ alias phockup-backup='phockup ~/Downloads/photos "/Volumes/Seagate 1TB/photos" -
 
 # lazygit
 alias lg='lazygit'
+
+# lazydocker
+alias ld='lazydocker'
