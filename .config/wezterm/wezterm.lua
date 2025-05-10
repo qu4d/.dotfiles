@@ -13,7 +13,9 @@ config = {
 	check_for_updates = false,
 	color_scheme = "GruvboxDark",
 	default_cursor_style = "BlinkingBlock",
-	font = wezterm.font("FiraCode Nerd Font"),
+	-- font = wezterm.font("FiraCode Nerd Font"),
+	font = wezterm.font("Iosevka Nerd Font"),
+	font_size = 14,
 	hide_tab_bar_if_only_one_tab = true,
 	keys = {
 		{ key = "[", mods = "CTRL|ALT", action = wezterm.action.ActivateTabRelative(-1) },
