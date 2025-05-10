@@ -34,3 +34,6 @@ alias lg='lazygit'
 
 # lazydocker
 alias ld='lazydocker'
+
+# orbstack
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
