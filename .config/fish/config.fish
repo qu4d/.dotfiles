@@ -5,7 +5,7 @@ set -gx EDITOR nvim
 set fish_greeting
 set -g fish_key_bindings fish_vi_key_bindings
 
-### other settings ###
+### app settings ###
 # pyenv
 set -Ux PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
@@ -23,16 +23,11 @@ set fzf_directory_opts --bind "ctrl-o:execute($EDITOR {} &> /dev/tty)"
 fzf_configure_bindings --directory=\cF --processes=\cP --git_log= --git_status=
 
 ### aliases ###
+# update
+alias update='brew update && brew upgrade --greedy && brew autoremove && brew cleanup && brew doctor && mas upgrade'
+
 # nvim
 alias n='nvim'
-
-# brew
-alias br='brew update && brew upgrade && brew autoremove && brew cleanup && brew doctor'
-alias brg='brew update && brew upgrade --greedy && brew autoremove && brew cleanup && brew doctor'
-
-# phockup
-alias phockup-preview='phockup ~/Downloads/photos "/Volumes/Seagate 1TB/photos" -d "YYYY/MM" -y'
-alias phockup-backup='phockup ~/Downloads/photos "/Volumes/Seagate 1TB/photos" -d "YYYY/MM" -m'
 
 # lazygit
 alias lg='lazygit'
