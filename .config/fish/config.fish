@@ -5,6 +5,9 @@ set -gx EDITOR nvim
 set fish_greeting
 set -g fish_key_bindings fish_vi_key_bindings
 
+### custom functions ###
+source ~/.config/fish/functions/activate_python_environment.fish
+
 ### app settings ###
 # golang
 set -x GOPATH $HOME/.local/go
