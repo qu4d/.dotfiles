@@ -6,6 +6,10 @@ set fish_greeting
 set -g fish_key_bindings fish_vi_key_bindings
 
 ### app settings ###
+# golang
+set -x GOPATH $HOME/.local/go
+set -x PATH $PATH $GOPATH/bin
+
 # pyenv
 set -Ux PYENV_ROOT $HOME/.pyenv
 fish_add_path $PYENV_ROOT/bin
