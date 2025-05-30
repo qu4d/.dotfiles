@@ -1,4 +1,3 @@
-brew "atac"
 brew "bat"
 brew "fd"
 brew "fish"
