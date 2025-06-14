@@ -30,7 +30,7 @@ set fzf_directory_opts --bind "ctrl-o:execute($EDITOR {} &> /dev/tty)"
 fzf_configure_bindings --directory=\cF --processes=\cP --git_log= --git_status=
 
 ### aliases ###
-alias update='brew update && brew upgrade --greedy && brew autoremove && brew cleanup && brew doctor && mas upgrade'
+alias update='brew update && brew upgrade --greedy && brew autoremove && brew cleanup && brew doctor && mas upgrade && fisher update'
 alias n='nvim'
 alias lg='lazygit'
 alias ld='lazydocker'
