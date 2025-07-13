@@ -9,6 +9,12 @@ set -g fish_key_bindings fish_vi_key_bindings
 source ~/.config/fish/functions/activate_python_environment.fish
 
 ### app settings ###
+# zellij
+if status is-interactive
+    set -x ZELLIJ_AUTO_ATTACH true
+    set -x ZELLIJ_AUTO_EXIT true
+    eval (zellij setup --generate-auto-start fish | string collect)
+end
 # golang
 set -x GOPATH $HOME/.local/go
 set -x PATH $PATH $GOPATH/bin
