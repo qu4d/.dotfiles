@@ -15,6 +15,7 @@ if status is-interactive
     set -x ZELLIJ_AUTO_EXIT true
     eval (zellij setup --generate-auto-start fish | string collect)
 end
+
 # golang
 set -x GOPATH $HOME/.local/go
 set -x PATH $PATH $GOPATH/bin
@@ -26,9 +27,6 @@ pyenv init - fish | source
 
 # orbstack
 source ~/.orbstack/shell/init2.fish 2>/dev/null || :
-
-# atac
-set -gx ATAC_KEY_BINDINGS $HOME/.config/atac/vim_key_bindings.toml
 
 # fzf
 set fzf_fd_opts --hidden --no-ignore --max-depth 5
