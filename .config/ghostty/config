@@ -7,7 +7,7 @@ window-theme = system
 window-padding-x = 0
 window-padding-y = 0
 window-padding-balance = true
-theme = GruvboxDark
+theme = Gruvbox Dark
 font-size = 16
 font-family = Iosevka Nerd Font
 keybind = alt+left=unbind
