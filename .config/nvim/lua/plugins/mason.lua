@@ -6,7 +6,6 @@ return {
       "delve",
       "gofumpt",
       "goimports",
-      "golangl-lint",
       "golines",
       "gomodifytags",
       "gopls",
