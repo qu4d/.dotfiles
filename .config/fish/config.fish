@@ -13,12 +13,12 @@ if status is-interactive
     eval (zellij setup --generate-auto-start fish | string collect)
 end
 
-# golang
-set -x GOPATH $HOME/.local/go
-set -x PATH $PATH $GOPATH/bin
+# emacs
+set -gx PATH $HOME/.emacs.d/bin $PATH
 
-# orbstack
-source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+# golang
+set -gx GOPATH $HOME/.local/go
+set -gx PATH $GOPATH/bin $PATH
 
 # fzf
 set fzf_fd_opts --hidden --no-ignore --max-depth 5
@@ -27,6 +27,4 @@ fzf_configure_bindings --directory=\cF --processes=\cP --git_log= --git_status=
 
 ### aliases ###
 alias update='mas upgrade && fisher update && brew update && brew upgrade --greedy && brew autoremove && brew cleanup && brew doctor'
-alias v='nvim'
-alias lg='lazygit'
-alias ld='lazydocker'
+alias em='emacs -nw'
