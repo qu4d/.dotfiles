@@ -12,6 +12,9 @@ if status is-interactive
     eval (zellij setup --generate-auto-start fish | string collect)
 end
 
+### orbstack ###
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
+
 ### emacs ###
 set -gx PATH $HOME/.emacs.d/bin $PATH
 
